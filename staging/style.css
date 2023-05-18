@@ -671,9 +671,9 @@ Misc. Individual formatting
 
 #ethan {
 	/*background:				var(--g-background);*/
-	background: rgba(106,208,255,0.9);
+	background: 			rgba(106,208,255,0.9);
 	border:						var(--g-border);
-	border-radius: 		20px;
+	border-radius:		20px;
 	box-shadow:				var(--g-box-shadow);
 
 	max-width: var(--max-w-small);
