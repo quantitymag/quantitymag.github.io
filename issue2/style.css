@@ -1,15 +1,15 @@
-/*------------------------------
-CSS VARIABLES 
+
+/* CSS VARIABLES 
 
 See the note at the end of this file
 for more info on how these work.
-------------------------------*/
+------------------------------*/ 
 
 :root {
 
 
 	/* Main background image */
-	--bg-img: url(bg.jpg);
+	--bg-img: url(/issue2/bg.jpg);
 
 
 	/* Max widths: small = text, large = media, headings */
@@ -115,7 +115,6 @@ for more info on how these work.
 	font-family: "neuropol";
 	src: url('system/fonts/neuropol.otf');
 }
-
 
 /*-------------------------*/
 
