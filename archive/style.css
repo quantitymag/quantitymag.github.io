@@ -106,7 +106,8 @@ for more info on how these work.
 }
 
 #top-column {
-	padding: 1rem;
+	/* padding: .5rem; */
+	margin-bottom: 10px
 }
 
 #top-column p {
@@ -250,3 +251,72 @@ a:hover {
 
 
 /*-------------------------*/
+
+
+
+/*-------------------------*/
+/* MEDIA QUERIES  */
+
+/* Extra small devices (phones, 600px and down) */
+/*@media only screen and (max-width: 600px) {
+	body {font-size: normal;}
+}*/
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (max-width: 600px) {
+
+	body {
+		font-size: large;
+	}
+
+	#issue-div {
+		display: block;
+	}
+
+	#issue-month {
+		text-align: center;
+	}
+
+	h2 {
+		font-size: 2rem;
+		text-align: center;
+		line-height: 0.8rem;
+	}
+
+	#toc-heading {
+		font-family: "neuropol", sans-serif;
+		font-size: 2rem;
+		text-align: center;
+		line-height: normal;
+	}
+
+	#main-column {
+		padding:0rem;
+	}
+
+	audio {
+		border: None;
+		box-shadow: None;
+	}
+
+	.cw-button {
+		font-size: 1em;
+	}
+
+	p, pre {
+		font-size: 1em;
+	}
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 800px) {
+	body {font-size: x-large;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1000px) {
+	body {font-size: x-large;}
+}
+
