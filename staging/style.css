@@ -286,7 +286,7 @@ Table of Contents
 
 #toc-list {
 	max-width: var(--max-w-large);
-	padding: 0;
+	padding: 0px 1em;
 	margin: 0px auto;
 	list-style: none;
 	text-align: center;
@@ -578,8 +578,10 @@ a:hover {
 
 /* New links */
 a {
-	color: var(--main-text-accent-1);
-	text-shadow: var(--a-hover-text-shadow);
+	/*color: var(--main-text-accent-1);*/
+	color: #ffeb54;
+	/*text-shadow: var(--main-text-accent-2);*/
+	text-shadow: -1px -1px 3px black, 2px 2px 3px purple;
 	transition: -webkit-text-fill-color 0.5s;
 	text-decoration: none;
 }
