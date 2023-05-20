@@ -115,6 +115,18 @@ for more info on how these work.
 	padding: 1rem;
 }
 
+#issue-div {
+	display: flexbox;
+	flex-direction: row;
+	padding: 10px;
+	text-align:center;
+	/* work on background box color */
+}
+
+#issue-month {
+	text-align:left;
+}
+
 
 
 /*--------------------
@@ -134,7 +146,7 @@ h1,h2,h3 {
 
 h2 {
 	font-family: "kosmos", sans-serif;
-	font-size: 5.5vw;
+	font-size: 4.5vw;
 }
 
 h3 {
@@ -146,8 +158,26 @@ h3 {
 h4 {
 	font-family: "conthrax", Andale Mono, Consolas, sans-serif;
 	text-transform: uppercase;
+	font-size: 3.0rem;
 }
 
+
+/* Anchor tags */
+a {
+	color: var(--main-text-accent-1);
+	text-shadow: var(--main-text-shadow-1);
+	transition: -webkit-text-fill-color 0.5s;
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--main-text-fill);
+	text-shadow:
+		-3px -3px 6px var(--main-text-stroke),
+		0px 0px 3px var(--main-text-stroke),
+		2px 2px 3px var(--main-text-shadow-1);
+	transition: -webkit-text-fill-color 0.5s;
+}
 
 /*-------------------------*/
 /* HEADLINE ANIMATION  */
@@ -200,3 +230,23 @@ h4 {
   }
   /*-------------------------*/
   
+  /*-------------------------*/
+/* FONT IMPORTS */
+
+@font-face {
+	font-family: "gau pop magic";
+	src: url('/system/fonts/gau_pop_magic.TTF');
+}
+
+@font-face {
+	font-family: "kosmos";
+	src: url('system/fonts/kosmos.TTF');
+}
+
+@font-face {
+	font-family: "neuropol";
+	src: url('system/fonts/neuropol.otf');
+}
+
+
+/*-------------------------*/
