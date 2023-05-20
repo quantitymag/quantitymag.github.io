@@ -19,10 +19,15 @@ for more info on how these work.
 
 	/* Main Text color Variables */
 	--main-text-fill: white;
-	--main-text-stroke: lightskyblue;
-	--main-text-shadow-1: cornflowerblue;
-	--main-text-shadow-2: #3ec4ed;
-	--main-text-accent-1: #aa6ff2;
+	--main-text-stroke: deeppink;
+
+	/*Standard font: lower-right shadow*/
+	--main-text-shadow-1: purple;
+
+	/*Standard font: upper-left shadow*/
+	--main-text-shadow-2: #0b134a;
+
+	--main-text-accent-1: deeppink;
 
 
 	/* Global: Box and Background */
@@ -32,11 +37,16 @@ for more info on how these work.
 		0px 0px 20px var(--main-text-accent-1), 
 		0px 0px 3px var(--main-text-stroke);
 	--g-background:
-		linear-gradient(139deg,
+/*		linear-gradient(139deg,
 		rgba(255,233,11,1) 0%,
 		rgba(255,115,62,0.7) 27%,
 		rgba(105,192,255,0.7) 66%,
-		rgba(255,248,128,1) 100%);
+		rgba(255,248,128,1) 100%);*/
+			linear-gradient(139deg,
+				rgba(131,31,157,1) 0%,
+				rgba(241,86,43,0.7) 23%,
+				rgba(38,235,225,0.7) 82%,
+				rgba(217,3,214,1) 100%);
 
 
 
@@ -276,7 +286,7 @@ Table of Contents
 
 #toc-list {
 	max-width: var(--max-w-large);
-	padding: 0;
+	padding: 0px 1em;
 	margin: 0px auto;
 	list-style: none;
 	text-align: center;
@@ -472,8 +482,8 @@ Content Warning items
 	display: block;
 	border-radius: 20px;
 
-	background: rgb(255,233,11);
-	color: cornflowerblue;
+	background: deeppink;
+	color: white;
 
 	font-family: "neuropol", Andale Mono, Consolas, Monospace;
 	text-align: center;
@@ -486,8 +496,8 @@ Content Warning items
 }
 
 .cw-button:hover {
-	background: cornflowerblue;
-	color: rgb(255,233,11);
+	background: yellow;
+	color: deeppink;
 }
 
 .cw-content {
@@ -568,8 +578,10 @@ a:hover {
 
 /* New links */
 a {
-	color: var(--main-text-accent-1);
-	text-shadow: var(--a-hover-text-shadow);
+	/*color: var(--main-text-accent-1);*/
+	color: #ffeb54;
+	/*text-shadow: var(--main-text-accent-2);*/
+	text-shadow: -1px -1px 3px black, 2px 2px 3px purple;
 	transition: -webkit-text-fill-color 0.5s;
 	text-decoration: none;
 }
@@ -606,11 +618,11 @@ a:hover {
   from {
   	-webkit-text-fill-color: white;
   	-webkit-text-stroke-width: 1px;
-  	-webkit-text-stroke-color: lightskyblue;
+  	-webkit-text-stroke-color: deeppink;
 
   	letter-spacing: 0rem;
   	text-shadow:
-  		0px 0px 3px cornflowerblue,
+  		0px 0px 3px #0b134a,
   		-2px -2px 2px #3ec4ed,
   		2px 2px 4px #aa6ff2;
 
@@ -626,10 +638,10 @@ a:hover {
   	letter-spacing: 0.1rem;
   	text-shadow:
   		-5px -5px 0px white, 
-			2px 2px 0px #ff9900,
-			8px 8px 0px rgb(255,233,11);
+			2px 2px 0px deeppink,
+			8px 8px 0px #0b134a;
 
-  	-webkit-transform: rotate(5deg);
+  	-webkit-transform: rotate(-7deg);
 
   	text-indent: 3rem;
 		padding-left: 0rem;
@@ -670,10 +682,9 @@ Misc. Individual formatting
 --------------------*/
 
 #ethan {
-	/*background:				var(--g-background);*/
-	background: rgba(106,208,255,0.9);
+	background: 			rgba(106,208,255,0.9);
 	border:						var(--g-border);
-	border-radius: 		20px;
+	border-radius:		20px;
 	box-shadow:				var(--g-box-shadow);
 
 	max-width: var(--max-w-small);
