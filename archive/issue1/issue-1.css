@@ -9,7 +9,7 @@ for more info on how these work.
 
 
 	/* Main background image */
-	--bg-img: url('/archive/issue1/bg-2-a.jpg')
+	--bg-img: url('/archive/issue1/bg-2-a.jpg');
 
 
 	/* Max widths: small = text, large = media, headings */
