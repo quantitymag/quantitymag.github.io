@@ -136,8 +136,8 @@ body {
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: repeat-x;
-	background-size: 30%;
-	/* padding-bottom: 10rem; */
+	background-size: contain;
+	padding-bottom: 10rem;
 	transition: 0s linear;
 }
 

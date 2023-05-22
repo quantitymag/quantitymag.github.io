@@ -9,7 +9,7 @@ for more info on how these work.
 
 
 	/* Main background image */
-	--bg-img: url(./backgrounds/bg-2-a.jpg);
+	--bg-img: url('/archive/issue1/bg-2-a.jpg')
 
 
 	/* Max widths: small = text, large = media, headings */
@@ -102,17 +102,17 @@ for more info on how these work.
 
 @font-face {
 	font-family: "gau pop magic";
-	src: url('fonts/gau_pop_magic.TTF');
+	src: url('/system/fonts/gau_pop_magic.TTF');
 }
 
 @font-face {
 	font-family: "kosmos";
-	src: url('fonts/kosmos.TTF');
+	src: url('/system/fonts/kosmos.TTF');
 }
 
 @font-face {
 	font-family: "neuropol";
-	src: url('fonts/neuropol.otf');
+	src: url('/system/fonts/neuropol.otf');
 }
 
 /*-------------------------*/
@@ -142,7 +142,7 @@ body {
 
 
 #bg-div {
-  background-image: var(--bg-img);
+  background-image: url(/archive/issue1/bg-2-a.jpg);
 
   background-attachment: fixed;
   background-position: center 20%;
