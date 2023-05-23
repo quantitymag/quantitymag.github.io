@@ -63,6 +63,10 @@ for more info on how these work.
 
 }
 
+
+
+/*-------------------------*/
+
 /* GLOBAL CSS CLASSES */
 
 .global-box {
@@ -77,21 +81,68 @@ for more info on how these work.
 	color:						var(--g-color);
 	text-shadow: 			var(--g-text-shadow);
 }
+/*-------------------------*/
 
 
 
+
+
+
+
+/*-------------------------*/
+/* FONT IMPORTS */
+
+@font-face {
+	font-family: "gau pop magic";
+	src: url('/system/fonts/gau_pop_magic.TTF');
+}
+
+@font-face {
+	font-family: "kosmos";
+	src: url('system/fonts/kosmos.TTF');
+}
+
+@font-face {
+	font-family: "neuropol";
+	src: url('/system/fonts/neuropol.otf');
+}
+
+@font-face {
+	font-family: "neuropolitical";
+	src: url(/system/fonts/neuropolitical\ rg.otf);
+}
+
+
+
+
+
+
+/*-------------------------*/
+
+/* CSS STYLES */
+body {
+	font-family: var(--g-font-family);
+	color: var(--g-color);
+	text-shadow: var(--g-text-shadow);
+
+	font-size: x-large;
+	padding: 0px;
+	margin: 0px;
+
+	height: 100%;
+}
 
 
 
 #arch-bg-div {
 	background-image: url("/archive-bg-1.png");
 
-	/* background-attachment: fixed; */
+	background-attachment: fixed;
 	background-position: center 20%;
-	background-repeat: repeat-x;
+	/* background-repeat: repeat-x; */
 	background-size: 100% auto;
-	padding-bottom: 10rem;
-	transition: 0s linear;
+	padding-bottom: 15rem;
+	/* transition: 0s linear; */
 }
 
 
@@ -107,6 +158,9 @@ for more info on how these work.
 
 #top-column {
 	padding: 1rem;
+	margin-bottom: 5px;
+	/* justify-content: top; */
+	
 }
 
 #top-column p {
@@ -217,36 +271,118 @@ a:hover {
   }
   
   h1 {
-	  font-family: Andale Mono, monospace;
+	  font-family: 'neuropolitical', sans-serif;
 	  text-align: center;
-  
+	  background: linear-gradient(to bottom,  #00f2ff 0%,#178d9f 50%,#0a343f 51%,#021426 100%);
+	  background-blend-mode: multiply;
+	  background-size: 10px 8vw;
+	  background-repeat:repeat;
+	  background-origin:content-box;
+	  line-height: 1;
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
 	  text-indent: -3rem;
-	  padding-left: 3rem;
-  
-	  animation:  h1-animation 1.7s cubic-bezier(0.85, 0.0, 0.2, 2.0) alternate infinite;
-  
+	  padding-left: 30rem;
 	  font-size: 8vw;
+	 
+	  } 
+	
+
+	/* h1::before {
+		background: none;
+		content: attr(data-text);
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: +2;
+		background-blend-mode: screen;
+		background-image: url('https://i.imgur.com/Ym9HCsT.gif');
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		opacity: 0.5;
+	  } */
+	h1::after {
+		background: none;
+		content: attr(data-text);
+		position: absolute;
+		left: 0;
+		top: 0;
+		text-shadow: 1px -1px 0 rgba(255,255,255,0.5),
+		3px 1px 3px rgba(255,0,255,0.85), 
+		-3px -2px 3px rgba(0,0,255,0.85),
+		1px -2px 0 rgba(255,255,255,0.8);
+		z-index: -2;
+	  }
+
+
+	  
+	/*-------------------------*/
+	/* animation:  h1-animation 1.7s cubic-bezier(0.85, 0.0, 0.2, 2.0) alternate infinite; */
   
-  }
   /*-------------------------*/
-  
-  /*-------------------------*/
-/* FONT IMPORTS */
 
-@font-face {
-	font-family: "gau pop magic";
-	src: url('/system/fonts/gau_pop_magic.TTF');
-}
 
-@font-face {
-	font-family: "kosmos";
-	src: url('system/fonts/kosmos.TTF');
-}
-
-@font-face {
-	font-family: "neuropol";
-	src: url('system/fonts/neuropol.otf');
-}
 
 
 /*-------------------------*/
+/* MEDIA QUERIES  */
+
+/* Extra small devices (phones, 600px and down) */
+/*@media only screen and (max-width: 600px) {
+	body {font-size: normal;}
+}*/
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (max-width: 600px) {
+
+	body {
+		font-size: large;
+	}
+
+	#issue-div {
+		display: block;
+	}
+
+	#issue-month {
+		text-align: center;
+	}
+
+	h2 {
+		font-size: 2rem;
+		text-align: center;
+		line-height: 0.8rem;
+	}
+
+	#toc-heading {
+		font-family: "neuropolitical", sans-serif;
+		font-size: 2rem;
+		text-align: center;
+		line-height: normal;
+	}
+
+	#main-column {
+		padding:0rem;
+	}
+
+
+	.cw-button {
+		font-size: 1em;
+	}
+
+	p, pre {
+		font-size: 1em;
+	}
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 800px) {
+	body {font-size: x-large;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1000px) {
+	body {font-size: x-large;}
+}
+
