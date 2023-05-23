@@ -9,7 +9,7 @@ for more info on how these work.
 
 
 	/* Main background image */
-	--bg-img: url(bg.jpg);
+	--bg-img: url(./backgrounds/bg-2-a.jpg);
 
 
 	/* Max widths: small = text, large = media, headings */
@@ -19,15 +19,10 @@ for more info on how these work.
 
 	/* Main Text color Variables */
 	--main-text-fill: white;
-	--main-text-stroke: deeppink;
-
-	/*Standard font: lower-right shadow*/
-	--main-text-shadow-1: purple;
-
-	/*Standard font: upper-left shadow*/
-	--main-text-shadow-2: #0b134a;
-
-	--main-text-accent-1: deeppink;
+	--main-text-stroke: aqua;
+	--main-text-shadow-1: DarkMagenta;
+	--main-text-shadow-2: aqua;
+	--main-text-accent-1: fuchsia;
 
 
 	/* Global: Box and Background */
@@ -37,17 +32,11 @@ for more info on how these work.
 		0px 0px 20px var(--main-text-accent-1), 
 		0px 0px 3px var(--main-text-stroke);
 	--g-background:
-/*		linear-gradient(139deg,
-		rgba(255,233,11,1) 0%,
-		rgba(255,115,62,0.7) 27%,
-		rgba(105,192,255,0.7) 66%,
-		rgba(255,248,128,1) 100%);*/
-			linear-gradient(139deg,
-				rgba(131,31,157,1) 0%,
-				rgba(241,86,43,0.7) 23%,
-				rgba(38,235,225,0.7) 82%,
-				rgba(217,3,214,1) 100%);
-
+		linear-gradient( 24deg, 
+		rgba(127,122,203,1.0) 0%, 
+		rgba(162,136,170,0.7) 30%, 
+		rgba(90,208,172,0.7) 62%, 
+		rgba(106,208,255,0.9) 100% );
 
 
 	/* Global: Fonts and Font stylying */
@@ -113,19 +102,18 @@ for more info on how these work.
 
 @font-face {
 	font-family: "gau pop magic";
-	src: url('system/fonts/gau_pop_magic.TTF');
+	src: url('fonts/gau_pop_magic.TTF');
 }
 
 @font-face {
 	font-family: "kosmos";
-	src: url('system/fonts/kosmos.TTF');
+	src: url('fonts/kosmos.TTF');
 }
 
 @font-face {
 	font-family: "neuropol";
-	src: url('system/fonts/neuropol.otf');
+	src: url('fonts/neuropol.otf');
 }
-
 
 /*-------------------------*/
 
@@ -154,8 +142,6 @@ body {
 
 
 #bg-div {
-	/*transform: translateZ(-500px);*/
-
   background-image: var(--bg-img);
 
   background-attachment: fixed;
@@ -163,9 +149,6 @@ body {
   background-size: 100% auto;
 
   padding-bottom: 3rem;
-
-  transition: 0s linear;
-
 }
 
 
@@ -287,7 +270,7 @@ Table of Contents
 
 #toc-list {
 	max-width: var(--max-w-large);
-	padding: 0px 1em;
+	padding: 0;
 	margin: 0px auto;
 	list-style: none;
 	text-align: center;
@@ -387,23 +370,6 @@ audio {
 }
 
 
-
-.item-bandcamp {
-	text-align: center;
-}
-
-.bandcamp-embed {
-	max-width: 350px;
-	height: 390px;
-
-	background:				var(--g-background);
-	border:						var(--g-border);
-	border-radius: 		20px;
-	box-shadow:				var(--g-box-shadow);
-
-}
-
-
 /* Video: Container, iframes (etc), video element*/
 .item-video {
 	position:relative;
@@ -483,7 +449,7 @@ Content Warning items
 	display: block;
 	border-radius: 20px;
 
-	background: deeppink;
+	background: fuchsia;
 	color: white;
 
 	font-family: "neuropol", Andale Mono, Consolas, Monospace;
@@ -497,8 +463,8 @@ Content Warning items
 }
 
 .cw-button:hover {
-	background: yellow;
-	color: deeppink;
+	background: white;
+	color: fuchsia;
 }
 
 .cw-content {
@@ -579,10 +545,8 @@ a:hover {
 
 /* New links */
 a {
-	/*color: var(--main-text-accent-1);*/
-	color: #ffeb54;
-	/*text-shadow: var(--main-text-accent-2);*/
-	text-shadow: -1px -1px 3px black, 2px 2px 3px purple;
+	color: var(--main-text-accent-1);
+	text-shadow: var(--a-hover-text-shadow);
 	transition: -webkit-text-fill-color 0.5s;
 	text-decoration: none;
 }
@@ -619,13 +583,13 @@ a:hover {
   from {
   	-webkit-text-fill-color: white;
   	-webkit-text-stroke-width: 1px;
-  	-webkit-text-stroke-color: deeppink;
+  	-webkit-text-stroke-color: aqua;
 
   	letter-spacing: 0rem;
   	text-shadow:
-  		0px 0px 3px #0b134a,
-  		-2px -2px 2px #3ec4ed,
-  		2px 2px 4px #aa6ff2;
+  		0px 0px 3px deeppink,
+  		-2px -2px 2px DarkMagenta,
+  		2px 2px 4px aqua;
 
   	text-indent: -3rem;
 		padding-left: 3rem;
@@ -639,10 +603,12 @@ a:hover {
   	letter-spacing: 0.1rem;
   	text-shadow:
   		-5px -5px 0px white, 
-			2px 2px 0px deeppink,
-			8px 8px 0px #0b134a;
+			2px 2px 0px SpringGreen,
+			8px 8px 0px aqua,
+			15px 15px 15px violet,
+			-10px -10px 15px violet;
 
-  	-webkit-transform: rotate(-7deg);
+  	-webkit-transform: rotate(-5deg);
 
   	text-indent: 3rem;
 		padding-left: 0rem;
@@ -683,9 +649,10 @@ Misc. Individual formatting
 --------------------*/
 
 #ethan {
-	background: 			rgba(106,208,255,0.9);
+	/*background:				var(--g-background);*/
+	background: rgba(106,208,255,0.9);
 	border:						var(--g-border);
-	border-radius:		20px;
+	border-radius: 		20px;
 	box-shadow:				var(--g-box-shadow);
 
 	max-width: var(--max-w-small);
