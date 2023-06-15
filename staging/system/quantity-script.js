@@ -1,6 +1,7 @@
 // Initialization functinos
 document.addEventListener('DOMContentLoaded', function() {
 	buildTOC()
+	convertSocials()
 });
 
 
@@ -30,5 +31,65 @@ function buildTOC() {
 		toc_ul.appendChild(toc_li)
 
 	}
+
+}
+
+
+
+// Converts <social> tags to links
+function convertSocials() {
+
+	// Get the social tags
+	const social_tags = document.getElementsByTagName("social")
+
+	// Loop through the social tags
+	while (social_tags.length > 0) {
+
+		// Get the info from the <social> tag
+		social = social_tags[0]
+		platform = social.getAttribute("platform")
+		handle = social.textContent
+
+		// Send info the function below, returns an object with url and text.
+		social_obj = getPlatformUrl(platform, handle)
+
+		// build the link text
+		let social_link = document.createElement("a")
+		social_link.href = social_obj["url"]
+		social_link.innerHTML = social_obj["text"]
+
+		// Replace the <social> with the <a>
+		social.replaceWith(social_link)
+
+	}
+
+
+	function getPlatformUrl(p, h) {
+		switch(p) {
+
+			case("instagram"):
+				return({
+					"text" : ("ig @" + h),
+					"url" : ("https://www.instagram.com/" + h)
+					})
+				break;
+
+			case("twitter"):
+				return({
+					"text" : ("tw @" + h),
+					"url": ("https://twitter.com/" + h)
+				})
+				break;
+
+			case("tiktok"):
+				return({
+					"text" : ("tk @" + h),
+					"url" : ("https://www.tiktok.com/@" + h)
+				})
+				break;
+
+		}
+	}
+
 
 }
