@@ -19,15 +19,15 @@ for more info on how these work.
 
 	/* Main Text color Variables */
 	--main-text-fill: white;
-	--main-text-stroke: deeppink;
+	--main-text-stroke: #72FE6D;
 
 	/*Standard font: lower-right shadow*/
-	--main-text-shadow-1: purple;
+	--main-text-shadow-1: #00622B;
 
 	/*Standard font: upper-left shadow*/
-	--main-text-shadow-2: #0b134a;
+	--main-text-shadow-2: #233A61;
 
-	--main-text-accent-1: deeppink;
+	--main-text-accent-1: #3F6217;
 
 
 	/* Global: Box and Background */
@@ -37,16 +37,10 @@ for more info on how these work.
 		0px 0px 20px var(--main-text-accent-1), 
 		0px 0px 3px var(--main-text-stroke);
 	--g-background:
-/*		linear-gradient(139deg,
-		rgba(255,233,11,1) 0%,
-		rgba(255,115,62,0.7) 27%,
-		rgba(105,192,255,0.7) 66%,
-		rgba(255,248,128,1) 100%);*/
-			linear-gradient(139deg,
-				rgba(131,31,157,1) 0%,
-				rgba(241,86,43,0.7) 23%,
-				rgba(38,235,225,0.7) 82%,
-				rgba(217,3,214,1) 100%);
+		linear-gradient(220deg, 
+			rgba(68,2,85,1) 0%, 
+			rgba(24,86,179,0.7) 68%, 
+			rgba(7,4,89,1) 100%);
 
 
 
@@ -163,7 +157,7 @@ body {
 
   padding-bottom: 3rem;
 
-  transition: 0s linear;
+  /*transition: 0s linear;*/
 
 }
 
@@ -579,7 +573,7 @@ a:hover {
 /* New links */
 a {
 	/*color: var(--main-text-accent-1);*/
-	color: #ffeb54;
+	color: #6bff4a;
 	/*text-shadow: var(--main-text-accent-2);*/
 	text-shadow: -1px -1px 3px black, 2px 2px 3px purple;
 	transition: -webkit-text-fill-color 0.5s;
@@ -616,32 +610,32 @@ a:hover {
 @keyframes h1-animation {
 
   from {
-  	-webkit-text-fill-color: white;
+  	-webkit-text-fill-color: var(--main-text-stroke);
   	-webkit-text-stroke-width: 1px;
-  	-webkit-text-stroke-color: deeppink;
+  	-webkit-text-stroke-color: #fff563;
 
   	letter-spacing: 0rem;
   	text-shadow:
-  		0px 0px 3px #0b134a,
-  		-2px -2px 2px #3ec4ed,
-  		2px 2px 4px #aa6ff2;
+  		0px 0px 3px #63ffa4,
+  		-2px -2px 2px #25006b,
+  		2px 2px 4px #52011c;
 
   	text-indent: -3rem;
 		padding-left: 3rem;
   }
 
   to {
-  	-webkit-text-fill-color: rgba(0,0,0,0);
+/*  	-webkit-text-fill-color: rgba(0,0,0,0);
   	-webkit-text-stroke-width: 0px;
-  	-webkit-text-stroke-color: white;
+  	-webkit-text-stroke-color: white;*/
 
-  	letter-spacing: 0.1rem;
-  	text-shadow:
-  		-5px -5px 0px white, 
-			2px 2px 0px deeppink,
-			8px 8px 0px #0b134a;
+  	letter-spacing: 0.8rem;
+/*  	text-shadow:
+  		-5px -5px 0px #ff9cbd, 
+			2px 2px 0px #25006b,
+			8px 8px 0px #63ffa4;*/
 
-  	-webkit-transform: rotate(-7deg);
+  	-webkit-transform: rotate(180deg);
 
   	text-indent: 3rem;
 		padding-left: 0rem;
@@ -680,6 +674,25 @@ h1 {
 /*--------------------
 Misc. Individual formatting
 --------------------*/
+
+.devin-ul {
+	/*max-width: var(--max-w-small);*/
+	/*margin: 1.5rem auto;*/
+	/*padding: 0.5rem;*/
+	font-size: smaller;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+
+	background:				var(--g-background);
+	border:						var(--g-border);
+	border-radius: 		20px;
+	box-shadow:				var(--g-box-shadow);
+}
+
+.devin-ul li {
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
 
 #ethan {
 	background: 			rgba(106,208,255,0.9);
