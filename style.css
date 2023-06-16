@@ -676,6 +676,11 @@ h1 {
 Misc. Individual formatting
 --------------------*/
 
+.devin-ul-container {
+	max-width: 550px;
+	margin: 0px auto;
+}
+
 .devin-ul {
 	/*max-width: var(--max-w-small);*/
 	/*margin: 1.5rem auto;*/
