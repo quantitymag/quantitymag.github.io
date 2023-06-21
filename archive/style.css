@@ -124,7 +124,6 @@ body {
 	font-family: var(--g-font-family);
 	color: var(--g-color);
 	text-shadow: var(--g-text-shadow);
-	/* font-size: x-large; */
 	padding: 0px;
 	margin: 0px;
 	height: 100%;
@@ -136,11 +135,10 @@ body {
 	background-image: url("/archive-bg-1.png");
 
 	background-attachment: fixed;
-	/* background-position: center 20%; */
 	background-repeat: repeat-x-;
-	background-size: 125%;
-	overflow:inherit;
-	padding-bottom: 20rem;;
+	background-size: 115%;
+	overflow:auto;
+	padding-bottom: 40rem;;
 	transition: 0s linear;
 }
 
@@ -149,27 +147,18 @@ body {
 
 /*-------------------------*/
 #main-column {
-	/* max-width: var(--max-w-large); */
 	margin: 0px auto;
 	padding: 1.5rem;
-	/* overflow:hidden */
-	/* padding-left: 900px; */
 }
 
 #title-div {
-	/* max-width: var(--max-w-large); */
-	/* display: flex; */
-	/* flex-direction: row; */
-	/* justify-content:flex-end; */
-	/* margin-right:025rem */
 	overflow:auto;
-	margin-bottom: 5px;
 }
 
 #title-div h1 {
-	font-size: 4.5rem;
-	text-align:right;
-	margin-right: 0.35rem;
+	font-size: 5rem;
+	text-align:center;
+	justify-content:center;
 }
 
 
@@ -177,18 +166,11 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-
-	/* work on background box color */
 }
 
 #issue-div h3 {
 	text-align: right;
 }
-
-/* #issue-month {
-	text-align:left;
-} */
-
 
 
 /*--------------------
@@ -197,14 +179,19 @@ headings
 
 h1,h2,h3 {
 	text-decoration: outline;
-
+	
 	-webkit-text-fill-color: var(--main-text-fill);
 	-webkit-text-stroke-color: var(--main-text-stroke);
 	-webkit-text-stroke-width: 1px;
-
+	
 	text-shadow: var(--h-text-shadow);
 }
 
+h1 {
+	font-family: 'neuropolitical', sans-serif;
+	/* font-size: 8vw; */
+   
+	} 
 
 h2 {
 	font-family: "kosmos", sans-serif;
@@ -243,80 +230,36 @@ a:hover {
 
 /*-------------------------*/
 /* HEADLINE ANIMATION  */
-@keyframes h1-animation {
 
-	from {
-		-webkit-text-fill-color: white;
-		-webkit-text-stroke-width: 1px;
-		-webkit-text-stroke-color: lightskyblue;
   
-		letter-spacing: 0rem;
-		text-shadow:
-			0px 0px 3px cornflowerblue,
-			-2px -2px 2px #3ec4ed,
-			2px 2px 4px #aa6ff2;
-  
-		text-indent: -3rem;
-		  padding-left: 3rem;
+	.neon h1 {
+		animation: neon 1s ease infinite
 	}
-  
-	to {
-		-webkit-text-fill-color: rgba(0,0,0,0);
-		-webkit-text-stroke-width: 0px;
-		-webkit-text-stroke-color: white;
-  
-		letter-spacing: 0.1rem;
-		text-shadow:
-			-5px -5px 0px white, 
-			  2px 2px 0px #ff9900,
-			  8px 8px 0px rgb(255,233,11);
-  
-  
-		text-indent: 3rem;
-		  padding-left: 0rem;
+
+	@keyframes neon {
+		0%,
+		100% {
+			text-shadow: 
+			0 0 10px var(--main-text-stroke), 
+			0 0 20px var(--main-text-stroke), 
+			0 0 20px var(--main-text-stroke), 
+			0 0 20px var(--main-text-stroke), 
+			0 0 2px var(--main-text-shadow-2), 
+			2px 2px 2px var(--main-text-accent-1);
+			color: var(--a-hover-text-shadow);
+		}
+		50% {
+			text-shadow: 
+			0 0 2px var(--main-text-accent-1), 
+			0 0 5px var(--main-text-accent-1), 
+			0 0 5px var(--main-text-accent-1), 
+			0 0 5px var(--main-text-accent-1), 
+			0 0 2px var(--main-text-accent-1), 
+			4px 4px 2px #40340a;
+			color: #eda0d3;
+		}
 	}
-  
-  }
-  
-  h1 {
-	  font-family: 'neuropolitical', sans-serif;
-	  /* font-size: 8vw; */
-	 
-	  } 
-	
 
-	/* h1::before {
-		background: none;
-		content: attr(data-text);
-		position: absolute;
-		left: 0;
-		top: 0;
-		z-index: +2;
-		background-blend-mode: screen;
-		background-image: url('https://i.imgur.com/Ym9HCsT.gif');
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		opacity: 0.5;
-	  } */
-	/* h1::after {
-		background: none;
-		content: attr(data-text);
-		/* position: absolute; */
-		/* left: 0;
-		top: 0;
-		text-shadow: 1px -1px 0 rgba(255,255,255,0.5),
-		3px 1px 3px rgba(255,0,255,0.85), 
-		-3px -2px 3px rgba(0,0,255,0.85),
-		1px -2px 0 rgba(255,255,255,0.8);
-		z-index: -2;
-	  } */ 
-
-
-	  
-	/*-------------------------*/
-	/* animation:  h1-animation 1.7s cubic-bezier(0.85, 0.0, 0.2, 2.0) alternate infinite; */
-  
-  /*-------------------------*/
 
 
 
