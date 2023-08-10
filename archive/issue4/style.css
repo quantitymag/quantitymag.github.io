@@ -107,17 +107,17 @@ for more info on how these work.
 
 @font-face {
 	font-family: "gau pop magic";
-	src: url('system/fonts/gau_pop_magic.TTF');
+	src: url('../../system/fonts/gau_pop_magic.TTF');
 }
 
 @font-face {
 	font-family: "kosmos";
-	src: url('system/fonts/kosmos.TTF');
+	src: url('../../system/fonts/kosmos.TTF');
 }
 
 @font-face {
 	font-family: "neuropol";
-	src: url('system/fonts/neuropol.otf');
+	src: url('../../system/fonts/neuropol.otf');
 }
 
 

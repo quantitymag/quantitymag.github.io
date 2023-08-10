@@ -19,28 +19,25 @@ for more info on how these work.
 
 	/* Main Text color Variables */
 	--main-text-fill: white;
-	--main-text-stroke: #72FE6D;
+	--main-text-stroke: #e04300;
 
 	/*Standard font: lower-right shadow*/
-	--main-text-shadow-1: #00622B;
+	--main-text-shadow-1: #1d00b0;
 
 	/*Standard font: upper-left shadow*/
-	--main-text-shadow-2: #233A61;
-
-	--main-text-accent-1: #3F6217;
+	--main-text-shadow-2: #abf0ff;
+	--main-text-accent-1: #9c004b;
 
 
 	/* Global: Box and Background */
+	/* Gradient tool -- https://cssgradient.io/ */
 	--g-border: 3px double var(--main-text-stroke);
 	--g-border-radius: 20px 40%;
 	--g-box-shadow:
 		0px 0px 20px var(--main-text-accent-1), 
 		0px 0px 3px var(--main-text-stroke);
 	--g-background:
-		linear-gradient(220deg, 
-			rgba(68,2,85,1) 0%, 
-			rgba(24,86,179,0.7) 68%, 
-			rgba(7,4,89,1) 100%);
+		linear-gradient(135deg, rgba(255,201,55,1) 0%, rgba(164,107,148,1) 16%, rgba(252,126,22,0.7) 68%, rgba(203,30,46,1) 100%); 
 
 
 
@@ -552,31 +549,12 @@ Standard Links
 --------------------*/
 
 
-/* Old links */
-/*
-a {
-	color: var(--main-text-fill);
-	text-shadow: var(--g-text-shadow);
-	text-decoration-line: underline;
-	text-decoration-thickness: 2px;
-	text-decoration-color: rgba(255,255,255,0.5);
-}
-
-a:hover {
-	color: var(--main-text-accent-1);
-	text-shadow: var(--a-hover-text-shadow);
-	transition: -webkit-text-fill-color 0.5s;
-	cursor: pointer;
-}
-*/
-
-
 /* New links */
 a {
 	/*color: var(--main-text-accent-1);*/
-	color: #6bff4a;
+	color: #ffc23d;
 	/*text-shadow: var(--main-text-accent-2);*/
-	text-shadow: -1px -1px 3px black, 2px 2px 3px purple;
+	text-shadow: -1px -1px 3px black, 2px 2px 3px #ed02be;
 	transition: -webkit-text-fill-color 0.5s;
 	text-decoration: none;
 }
@@ -626,20 +604,7 @@ a:hover {
   }
 
   to {
-/*  	-webkit-text-fill-color: rgba(0,0,0,0);
-  	-webkit-text-stroke-width: 0px;
-  	-webkit-text-stroke-color: white;*/
-
-  	letter-spacing: 0.8rem;
-/*  	text-shadow:
-  		-5px -5px 0px #ff9cbd, 
-			2px 2px 0px #25006b,
-			8px 8px 0px #63ffa4;*/
-
-  	-webkit-transform: rotate(180deg);
-
-  	text-indent: 3rem;
-		padding-left: 0rem;
+  	letter-spacing: 0.4rem;
   }
 
 }
@@ -651,7 +616,7 @@ h1 {
 	text-indent: -3rem;
 	padding-left: 3rem;
 
-	animation:  h1-animation 1.7s cubic-bezier(0.85, 0.0, 0.2, 1.0) alternate infinite;
+	animation:  h1-animation 2s cubic-bezier(0.85, 0.0, 0.2, 1.0) alternate infinite;
 
 	font-size: 8vw;
 
