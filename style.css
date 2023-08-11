@@ -18,7 +18,7 @@ for more info on how these work.
 
 
 	/* Main Text color Variables */
-	--main-text-fill: white;
+	--main-text-fill: #e9f7f7;
 	--main-text-stroke: #e04300;
 
 	/*Standard font: lower-right shadow*/
@@ -37,7 +37,7 @@ for more info on how these work.
 		0px 0px 20px var(--main-text-accent-1), 
 		0px 0px 3px var(--main-text-stroke);
 	--g-background:
-		linear-gradient(135deg, rgba(255,201,55,1) 0%, rgba(164,107,148,1) 16%, rgba(252,126,22,0.7) 68%, rgba(203,30,46,1) 100%); 
+		linear-gradient(135deg, rgba(171,251,221,1) 0%, rgba(90,148,138,0.5271513172002504) 28%, rgba(177,224,184,0.6) 59%, rgba(166,42,44,1) 100%);
 
 
 
