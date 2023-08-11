@@ -22,7 +22,7 @@ for more info on how these work.
 	--main-text-stroke: #e04300;
 
 	/*Standard font: lower-right shadow*/
-	--main-text-shadow-1: #1d00b0;
+	--main-text-shadow-1: #691302;
 
 	/*Standard font: upper-left shadow*/
 	--main-text-shadow-2: #abf0ff;
@@ -552,9 +552,9 @@ Standard Links
 /* New links */
 a {
 	/*color: var(--main-text-accent-1);*/
-	color: #ffc23d;
+	color: #e0c255;
 	/*text-shadow: var(--main-text-accent-2);*/
-	text-shadow: -1px -1px 3px black, 2px 2px 3px #ed02be;
+	text-shadow: -1px -1px 3px #691302, 2px 2px 3px #691302;
 	transition: -webkit-text-fill-color 0.5s;
 	text-decoration: none;
 }
