@@ -18,7 +18,7 @@ for more info on how these work.
 
 
 	/* Main Text color Variables */
-	--main-text-fill: #e9f7f7;
+	--main-text-fill: #fffdf2;
 	--main-text-stroke: #e04300;
 
 	/*Standard font: lower-right shadow*/
@@ -552,7 +552,8 @@ Standard Links
 /* New links */
 a {
 	/*color: var(--main-text-accent-1);*/
-	color: #e0c255;
+	/*color: #f7d865;*/
+	color: #fcde6d;
 	/*text-shadow: var(--main-text-accent-2);*/
 	text-shadow: -1px -1px 3px #691302, 2px 2px 3px #691302;
 	transition: -webkit-text-fill-color 0.5s;
