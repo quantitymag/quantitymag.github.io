@@ -307,10 +307,6 @@ Table of Contents
 	columns: 3;
 }
 
-#tryptic img {
-	box-shadow:none;
-}
-
 
 
 
@@ -467,7 +463,9 @@ pre {
 
 
 
-
+#tryptic img {
+	box-shadow:none;
+}
 
 
 
