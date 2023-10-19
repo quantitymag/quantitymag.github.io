@@ -304,9 +304,9 @@ Table of Contents
 
 
 #tryptic {
-	columns: 3;
+	display:flex;
+	justify-content: space-between;
 }
-
 
 
 
@@ -464,7 +464,11 @@ pre {
 
 
 
-
+#tryptic img {
+	box-shadow: none;
+	width: 30%;
+	height:auto;
+}
 
 
 
