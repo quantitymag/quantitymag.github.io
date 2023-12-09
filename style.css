@@ -19,14 +19,14 @@ for more info on how these work.
 
 	/* Main Text color Variables */
 	--main-text-fill: #fffdf2;
-	--main-text-stroke: #00ff44;
+	--main-text-stroke: #ffc370;
 
 	/*Standard font: lower-right shadow*/
-	--main-text-shadow-1: #691302;
+	--main-text-shadow-1: #04d694;
 
 	/*Standard font: upper-left shadow*/
 	/*--main-text-shadow-2: #abf0ff;*/
-	--main-text-accent-1: #6d009c;
+	--main-text-accent-1: #40ffdf;
 
 
 	/* Global: Box and Background */
@@ -560,9 +560,9 @@ Standard Links
 a {
 	/*color: var(--main-text-accent-1);*/
 	/*color: #f7d865;*/
-	color: #fac800;
+	color: #f2a74b;
 	/*text-shadow: var(--main-text-accent-2);*/
-	text-shadow: -1px -1px 3px #691302, 2px 2px 3px #691302;
+	text-shadow: -1px -1px 3px #691302, 2px 2px 3px #2400c2;
 	transition: -webkit-text-fill-color 0.5s;
 	text-decoration: none;
 }
@@ -604,7 +604,7 @@ a:hover {
   	letter-spacing: 0rem;
   	text-shadow:
   		0px 0px 3px #63ffa4,
-  		-2px -2px 2px #25006b,
+  		-2px -2px 2px #ff088c,
   		2px 2px 4px #52011c;
 
   	text-indent: 0rem;
@@ -613,7 +613,7 @@ a:hover {
 
   to {
   	  	letter-spacing: 0.1rem;
-  	-webkit-transform: rotate(-5deg);
+  	-webkit-transform: rotate(-10deg);
 
   	text-indent: 1rem;
 		padding-left: 0rem;
