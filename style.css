@@ -744,7 +744,7 @@ Misc. Individual formatting
 	text-align: center;
 }
 
-#hellraiser img {
+.hellimg {
 	max-width: 250px;
 	margin:0px auto;
 }
@@ -756,7 +756,15 @@ Misc. Individual formatting
 }
 
 
+#cool {
+/*	list-style-type: None;*/
+/*	padding-left:0em;*/
+}
 
+#cool li {
+	padding-top:0.5em;
+	padding-bottom:0.5em;
+}
 
 /*-------------------------*/
 /* MEDIA QUERIES  */
