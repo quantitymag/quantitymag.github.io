@@ -19,14 +19,14 @@ for more info on how these work.
 
 	/* Main Text color Variables */
 	--main-text-fill: #fffdf2;
-	--main-text-stroke: #ffc370;
+	--main-text-stroke: #0f9edb;
 
 	/*Standard font: lower-right shadow*/
 	--main-text-shadow-1: #04d694;
 
 	/*Standard font: upper-left shadow*/
 	/*--main-text-shadow-2: #abf0ff;*/
-	--main-text-accent-1: #40ffdf;
+	--main-text-accent-1: #ff05ea;
 
 
 	/* Global: Box and Background */
@@ -133,6 +133,8 @@ for more info on how these work.
 /*-------------------------*/
 /* CSS STYLES */
 body {
+
+	background-color:black;
 	font-family: var(--g-font-family);
 	color: var(--g-color);
 	text-shadow: var(--g-text-shadow);
@@ -141,7 +143,8 @@ body {
 	padding: 0px;
 	margin: 0px;
 
-	height: 100%;}
+	height: 100%;
+}
 
 
 #bg-div {
@@ -149,13 +152,15 @@ body {
 
   background-image: var(--bg-img);
 
+	/* See quantity-script.js for parallax scrolling */
+	background-size: 100% auto;
+  background-repeat: repeat-y;
   background-attachment: fixed;
-  background-position: center 20%;
-  background-size: 100% auto;
+  background-position: 0 0;
+  transition: 0.0s linear;
+  transition-property: background-position;
 
   padding-bottom: 3rem;
-
-  /*transition: 0s linear;*/
 
 }
 
@@ -559,7 +564,7 @@ Standard Links
 a {
 	/*color: var(--main-text-accent-1);*/
 	/*color: #f7d865;*/
-	color: #f2a74b;
+	color: #ffb83d;
 	/*text-shadow: var(--main-text-accent-2);*/
 	text-shadow: -1px -1px 3px #691302, 2px 2px 3px #2400c2;
 	transition: -webkit-text-fill-color 0.5s;
