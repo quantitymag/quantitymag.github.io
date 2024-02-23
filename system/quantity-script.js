@@ -4,6 +4,13 @@ document.addEventListener('DOMContentLoaded', function() {
 	convertSocials()
 });
 
+// Parallax scrolling for background
+window.addEventListener('scroll', doParallax);
+function doParallax(){
+   var positionY = window.pageYOffset/20;
+   document.getElementById("bg-div").style.backgroundPosition = "0 -" + positionY + "px";
+}
+
 
 // Automatically builds the table of contents
 function buildTOC() {
