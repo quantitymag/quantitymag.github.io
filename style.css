@@ -19,14 +19,14 @@ for more info on how these work.
 
 	/* Main Text color Variables */
 	--main-text-fill: #fffdf2;
-	--main-text-stroke: #0f9edb;
+	--main-text-stroke: #dbb37b;
 
 	/*Standard font: lower-right shadow*/
-	--main-text-shadow-1: #04d694;
+	--main-text-shadow-1: #ff2a12;
 
 	/*Standard font: upper-left shadow*/
 	/*--main-text-shadow-2: #abf0ff;*/
-	--main-text-accent-1: #ff05ea;
+	--main-text-accent-1: #ff0aff;
 
 
 	/* Global: Box and Background */
@@ -563,10 +563,9 @@ Standard Links
 /* New links */
 a {
 	/*color: var(--main-text-accent-1);*/
-	/*color: #f7d865;*/
-	color: #ffb83d;
+	color: #ff1fff;
 	/*text-shadow: var(--main-text-accent-2);*/
-	text-shadow: -1px -1px 3px #691302, 2px 2px 3px #2400c2;
+	text-shadow: -1px -1px 1px #26649e, 1px 1px 1px #ff0d45;
 	transition: -webkit-text-fill-color 0.5s;
 	text-decoration: none;
 }
@@ -601,15 +600,11 @@ a:hover {
 @keyframes h1-animation {
 
   from {
-  	-webkit-text-fill-color: var(--main-text-stroke);
-  	-webkit-text-stroke-width: 1px;
-  	-webkit-text-stroke-color: #fff563;
+  	-webkit-text-fill-color: rgba(0,0,0,0);
+  	-webkit-text-stroke-width: 2px;
+  	-webkit-text-stroke-color: #ff29f4;
 
   	letter-spacing: 0rem;
-  	text-shadow:
-  		0px 0px 3px #63ffa4,
-  		-2px -2px 2px #ff088c,
-  		2px 2px 4px #52011c;
 
   	text-indent: 0rem;
 		padding-left: 0rem;

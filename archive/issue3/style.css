@@ -22,10 +22,10 @@ for more info on how these work.
 	--main-text-stroke: deeppink;
 
 	/*Standard font: lower-right shadow*/
-	--main-text-shadow-1: purple;
+	--main-text-shadow-1: #ff410d;
 
 	/*Standard font: upper-left shadow*/
-	--main-text-shadow-2: #0b134a;
+	--main-text-shadow-2: #ff0548;
 
 	--main-text-accent-1: deeppink;
 
