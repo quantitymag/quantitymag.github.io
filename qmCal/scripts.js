@@ -7,9 +7,15 @@ document.addEventListener('DOMContentLoaded', async () => {
     const startDay = today.toISOString().split('T')[0];
     const endDay = sixMonthsLater.toISOString().split('T')[0];
 
+    console.log(`Fetching events from ${startDay} to ${endDay}`);
+
     try {
-        const response = await fetch(`https://qm-cal-backend-dce1fxeqz-skymouse85s-projects.vercel.app/api/events/${startDay}/${endDay}`);
+        const response = await fetch(`https://qm-cal-backend-a0ze791kq-skymouse85s-projects.vercel.app/api/events/${startDay}/${endDay}`);
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
         const events = await response.json();
+        console.log('Events fetched successfully:', events);
 
         if (events.error) {
             throw new Error(events.error);
@@ -36,7 +42,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             const eventElement = document.createElement('div');
             eventElement.classList.add('event-container');
 
-            // Build innerHTML with conditional checks
             let innerHTML = `
                 <h2 class="title">${event.summary}</h2>
                 <p>${startDateStr} ${startTimeStr} - ${endTimeStr}</p>
