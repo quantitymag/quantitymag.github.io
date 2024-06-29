@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const endDay = sixMonthsLater.toISOString().split('T')[0];
 
     try {
-        const response = await fetch(`https://qm-cal-backend.vercel.app/api/events/${startDay}/${endDay}`);
+        const response = await fetch(`https://qm-cal-backend-dce1fxeqz-skymouse85s-projects.vercel.app/api/events/${startDay}/${endDay}`);
         const events = await response.json();
 
         if (events.error) {
