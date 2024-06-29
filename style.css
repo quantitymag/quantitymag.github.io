@@ -19,14 +19,14 @@ for more info on how these work.
 
 	/* Main Text color Variables */
 	--main-text-fill: #fffdf2;
-	--main-text-stroke: #dbb37b;
+	--main-text-stroke: #f5b042;
 
 	/*Standard font: lower-right shadow*/
-	--main-text-shadow-1: #ff2a12;
+	--main-text-shadow-1: #991c68;
 
 	/*Standard font: upper-left shadow*/
-	/*--main-text-shadow-2: #abf0ff;*/
-	--main-text-accent-1: #ff0aff;
+	--main-text-shadow-2: #471100;
+	--main-text-accent-1: #74a674;
 
 
 	/* Global: Box and Background */
@@ -48,12 +48,12 @@ for more info on how these work.
 	--g-color: var(--main-text-fill);
 	--g-text-shadow:
 		2px 2px 2px var(--main-text-shadow-1), 
-		-1px -1px 2px var(--main-text-shadow-2);
+		-1px -1px 1px var(--main-text-shadow-2);
 
 
 	/* Heading text-shadows */
 	--h-text-shadow:
-		-2px -2px 2px var(--main-text-shadow-1),
+		-4px -4px 4px var(--main-text-shadow-1),
 		2px 2px 4px var(--main-text-shadow-2);
 
 
@@ -563,9 +563,9 @@ Standard Links
 /* New links */
 a {
 	/*color: var(--main-text-accent-1);*/
-	color: #ff1fff;
+	color: #ffd3b5;
 	/*text-shadow: var(--main-text-accent-2);*/
-	text-shadow: -1px -1px 1px #26649e, 1px 1px 1px #ff0d45;
+	text-shadow: -1px -1px 2px #cc5200, 1px 1px 3px #ff2b1f;
 	transition: -webkit-text-fill-color 0.5s;
 	text-decoration: none;
 }
@@ -600,9 +600,9 @@ a:hover {
 @keyframes h1-animation {
 
   from {
-  	-webkit-text-fill-color: rgba(0,0,0,0);
-  	-webkit-text-stroke-width: 2px;
-  	-webkit-text-stroke-color: #ff29f4;
+  	-webkit-text-fill-color: #400728;
+  	-webkit-text-stroke-width: 0.5px;
+  	-webkit-text-stroke-color: #fffae8;
 
   	letter-spacing: 0rem;
 
@@ -611,8 +611,8 @@ a:hover {
   }
 
   to {
-  	  	letter-spacing: 0.1rem;
-  	-webkit-transform: rotate(-10deg);
+  	  	letter-spacing: 0.3rem;
+  	-webkit-transform: rotate(3deg);
 
   	text-indent: 1rem;
 		padding-left: 0rem;
@@ -627,7 +627,7 @@ h1 {
 	text-indent: -3rem;
 	padding-left: 3rem;
 
-	animation:  h1-animation 2s cubic-bezier(0.85, 0.0, 0.2, 1.0) alternate infinite;
+	animation:  h1-animation 3.5s cubic-bezier(0.85, 0.0, 0.2, 1.0) alternate infinite;
 
 	font-size: 8vw;
 
@@ -755,6 +755,18 @@ Misc. Individual formatting
 	padding:2em;
 }
 
+.center {
+	text-align: center;
+	max-width:680px;
+	margin:0px auto;
+}
+
+.hellsmall {
+	max-width:680px;
+	width:100%;
+	height:auto;
+	margin:0px auto;
+}
 
 #cool {
 /*	list-style-type: None;*/
